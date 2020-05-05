@@ -1,0 +1,487 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+body{
+  color: #ffffff;
+}
+h2{
+  font-size: 22px;
+}
+h3{
+  font-size: 20px;
+}
+p{
+  font-size: 15px;
+}
+.onecoin-contents, .flower-contents, .vessel-contents, .merit-contents, .bottom-contents{
+  color: #000000;
+}
+
+
+.top-contents{
+  background: url("img/bg_header_pink_sp.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 90px;
+  height: 100vh;
+  min-height: 660px;
+  position: relative;
+  text-align: center;
+  .top-img{
+    width: 131px;
+    height: 116px;
+    margin-bottom: 10px;
+  }
+  .top-txt{
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
+  .top-app{
+    display: none;
+  }
+  .top-caution{
+    font-size: 13px;
+    position: absolute;
+    bottom: 6vh;
+    left: 17vw;
+  }
+}
+@media screen and(min-width: 750px){
+  .top-contents{
+    background: url("img/bg_header_pink.jpg") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    background-position: 0 -360px;
+    .top-logo{
+      padding-top: 100px;
+    }
+    .top-txt{
+      padding-top: 10px;
+      font-size: 20px;
+    }
+    .top-app{
+      display: flex;
+      display: inline-block;
+      img{
+        width: 50%;
+        float: left;
+        padding: 0 10px;
+        padding-top: 370px;
+      }
+      display: none;
+    }
+    .top-caution{
+      text-align: center;
+      left: 44vw;
+    }
+  }
+}
+
+
+.second-contents{
+  .second-taste{
+    background: url("img/bg_service01.jpg") no-repeat center;
+  }
+  .second-post{
+    background: url("img/bg_service02.jpg") no-repeat center;
+  }
+  .second-cute{
+    background: url("img/bg_service03.jpg") no-repeat center;
+  }
+  .second-layout{
+    background-size: cover;
+    height: 67vh;
+    padding: 30px 22px 0;
+    h2{
+      font-weight: normal;
+      padding-bottom: 10px;
+      line-height: 35px;
+    }
+    p{
+      line-height: 25px;
+      letter-spacing: 0.7px;
+    }
+  }
+}
+@media screen and(min-width: 750px){
+  .second-contents{
+    display: flex;
+    height: 80vh;
+  }
+  .second-layout{
+    width: 33.333333%;
+    height: 80vh !important;
+  }
+  .taste-txt, .post-txt, .cute-txt{
+    padding: 30px;
+  }
+  .second-taste{
+    height: 80vh;
+  }
+}
+
+
+.onecoin-contents{
+  text-align: center;
+  color: #3f434a;
+  .onecoin-info{
+    background-color: #f5f5f5;
+    padding-top: 55px;
+    &--title{
+      font-weight: normal;
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 35px;
+      padding-bottom: 10px;
+    }
+    &--img{
+      position: relative;
+      padding-bottom: 40px;
+      &1{
+        width: 125px;
+        position: absolute;
+        top: 0;
+        left: 33%;
+        z-index: 2;
+        text-align: center;
+      }
+      &2{
+        width: 200px;
+        transform: translateY(25px);
+      }
+    }
+    &--txt{
+      font-weight: bold;
+      padding-bottom: 33px;
+      line-height: 27px;
+      letter-spacing: 0.3px;
+    }
+    &--500{
+      font-size: 20px;
+    }
+    &--caution{
+      font-size: 13px;
+      padding-bottom: 75px;
+    }
+  }
+  .onecoin-month{
+    padding-top: 60px;
+    h2{
+      font-weight: normal;
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 35px;
+      padding-bottom: 15px;
+    }
+    &--img{
+      width: 180px;
+      padding-bottom: 70px;
+    }
+  }
+}
+@media screen and(min-width: 750px){
+  .onecoin-layout{
+    display: flex;
+  }
+  .onecoin-info{
+    width: 50%;
+    &--img1{
+      text-align: center !important;
+    }
+  }
+  .onecoin-month{
+    width: 50%;
+    margin: auto;
+  }
+}
+
+
+.flower-contents{
+  background-color: #ead5dc;
+  text-align: center;
+  color: #3f434a;
+  padding-bottom: 60px;
+  h2{
+    font-weight: normal;
+  }
+  .flower-title{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    letter-spacing: 0.5px;
+  }
+  .flower-img img{
+    width: 88%;
+    padding-bottom: 30px;
+  }
+  .flower-txt{
+    padding: 0 22px;
+    &--layout{
+      h2{
+        font-size: 20px;
+        padding-bottom: 13px;
+      }
+      p{
+        letter-spacing: 0.5px;
+        text-align: left;
+        padding-bottom: 25px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+@media screen and(min-width: 750px){
+  .flower-title{
+    float: right;
+  }
+  .flower-img{
+    width: 50%;
+    float: left;
+  }
+  .flower-txt{
+    float: right;
+  }
+  .flower-contents{
+    overflow: hidden;
+    flex-flow: column wrap;
+  }
+}
+
+
+.vessel-contents{
+  background-color: #e7e3df;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 65px;
+  color: #3f434a;
+  .vessel-title{
+    h2{
+      font-weight: normal;
+      padding-bottom: 20px;
+    }
+  }
+  .vessel-inexpensive{
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 7px;
+    position: relative;
+    z-index: 5;
+    p{
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+    }
+  }
+  .vessel-img{
+    background: url("img/bg_vase.jpg") no-repeat center;
+    background-size: 110%;
+    height: 420px;
+    position: relative;
+    top: -20px;
+  }
+  .vessel-info{
+    overflow: hidden;
+    padding: 0 22px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    &--txt{
+    padding-bottom: 27px;
+    line-height: 24px;
+    }
+    &--img{
+      display: flex;
+      img{
+        width: 89%;
+      }
+      p{
+        font-size: 13px;
+        transform: translate(30px, -30px);
+      }
+    }
+    &--price{
+      display: flex;
+      padding-bottom: 20px;
+      &---2week{
+        text-align: center;
+        padding: 3px;
+        margin-right: 15px;
+        border: 2px solid #3f434a;
+        p{
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+      &---1200{
+        &_1200{
+          font-size: 18px;
+        }
+        &_1600{
+          font-size: 13px;
+        }
+      }
+    }
+    &--app p{
+      font-size: 13px;
+    }
+  }
+}
+@media screen and(min-width: 750px){
+  .vessel-img{
+    width: 30%;
+    position: relative !important;
+    right: 0 !important;
+  }
+}
+
+
+.merit-contents{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #3f434a;
+  .merit-title h2{
+    font-weight: normal;
+    padding-bottom: 40px;
+  }
+  .merit-info{
+    img{
+      width: 20%;
+    }
+    h3{
+      font-weight: normal;
+      padding-bottom: 15px;
+    }
+    p{
+      padding-bottom: 30px;
+    }
+  }
+}
+@media screen and(min-width: 750px){
+  .merit-title h2{
+    font-size: 26px;
+  }
+  .merit-info{
+    display: flex;
+    img{
+      width: 13% !important;
+    }
+    &--easy{
+      width: 33.333%;
+    }
+    &--app{
+      width: 33.333%;
+    }
+    &--warrant{
+      width: 33.333%;
+    }
+  }
+}
+
+
+.bottom-contents{
+  background-color: #efdfc5;
+  text-align: center;
+  padding-top: 60px;
+  color: #3f434a;
+  .bottom-txt{
+    img{
+      width: 30%;
+      padding-bottom: 10px;
+    }
+  }
+  .bottom-img img{
+    width: 100%;
+    vertical-align: bottom;
+  }
+}
+@media screen and(min-width:750px){
+  .bottom-contents{
+    display: flex;
+    flex-flow: row-reverse;
+  }
+  .bottom-txt{
+    width: 50%;
+    margin-left: -550px  !important;
+    img{
+      width: 18% !important;
+    }
+  }
+  .bottom-img img{
+    width: 45% !important;
+  }
+}
+
+
+.footer-contents{
+  background-color: #3f434a;
+  color: #ffffff;
+  padding: 30px 30px 125px;
+  position: relative;
+  .footer-menu{
+    padding-bottom: 20px;
+    &--list{
+      list-style: none;
+      font-size: 14px;
+      padding-bottom: 18px;
+    }
+  }
+  .footer-insta img{
+    width: 17%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+  .footer-cc p{
+    font-size: 13px;
+    opacity: 0.4;
+    text-align: center;
+  }
+}
+@media screen and(min-width:750px){
+  .footer-menu{
+    padding-top: 50px;
+  }
+  .footer-menu{
+    padding-left: 50px;
+    padding-bottom: 200px !important;
+  }
+  .footer-menu-contents{
+    display: flex;
+  }
+  .footer-menu--list{
+    display: inline-block;
+    padding-right: 180px;
+  }
+  .footer-insta img{
+    width: 3.5% !important;
+  }
+}
+
+
+.fixed-menu{
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(8px);
+  height: 95px;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  text-align: center;
+  padding-top: 23px;
+  img{
+    width: 90%;
+  }
+  &-container{
+    display: flex;
+  }
+  &--apple{
+    padding-right: px;
+  }
+}
+@media screen and(min-width: 750px){
+  .fixed-menu{
+    display: none;
+  }
+}

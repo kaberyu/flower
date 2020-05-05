@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.onecoin-contents, .flower-contents, .vessel-contents, .merit-contents, .bottom-contents {
+  color: #000000;
+}
+
+.top-contents {
+  background: url("img/bg_header_pink_sp.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 90px;
+  height: 100vh;
+  min-height: 660px;
+  position: relative;
+  text-align: center;
+}
+
+.top-contents .top-img {
+  width: 131px;
+  height: 116px;
+  margin-bottom: 10px;
+}
+
+.top-contents .top-txt {
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+.top-contents .top-app {
+  display: none;
+}
+
+.top-contents .top-caution {
+  font-size: 13px;
+  position: absolute;
+  bottom: 6vh;
+  left: 17vw;
+}
+
+@media screen and (min-width: 750px) {
+  .top-contents {
+    background: url("img/bg_header_pink.jpg") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    background-position: 0 -360px;
+  }
+  .top-contents .top-logo {
+    padding-top: 100px;
+  }
+  .top-contents .top-txt {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .top-contents .top-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    display: none;
+  }
+  .top-contents .top-app img {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    padding-top: 370px;
+  }
+  .top-contents .top-caution {
+    text-align: center;
+    left: 44vw;
+  }
+}
+
+.second-contents .second-taste {
+  background: url("img/bg_service01.jpg") no-repeat center;
+}
+
+.second-contents .second-post {
+  background: url("img/bg_service02.jpg") no-repeat center;
+}
+
+.second-contents .second-cute {
+  background: url("img/bg_service03.jpg") no-repeat center;
+}
+
+.second-contents .second-layout {
+  background-size: cover;
+  height: 67vh;
+  padding: 30px 22px 0;
+}
+
+.second-contents .second-layout h2 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  line-height: 35px;
+}
+
+.second-contents .second-layout p {
+  line-height: 25px;
+  letter-spacing: 0.7px;
+}
+
+@media screen and (min-width: 750px) {
+  .second-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80vh;
+  }
+  .second-layout {
+    width: 33.333333%;
+    height: 80vh !important;
+  }
+  .taste-txt, .post-txt, .cute-txt {
+    padding: 30px;
+  }
+  .second-taste {
+    height: 80vh;
+  }
+}
+
+.onecoin-contents {
+  text-align: center;
+  color: #3f434a;
+}
+
+.onecoin-contents .onecoin-info {
+  background-color: #f5f5f5;
+  padding-top: 55px;
+}
+
+.onecoin-contents .onecoin-info--title {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 35px;
+  padding-bottom: 10px;
+}
+
+.onecoin-contents .onecoin-info--img {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.onecoin-contents .onecoin-info--img1 {
+  width: 125px;
+  position: absolute;
+  top: 0;
+  left: 33%;
+  z-index: 2;
+  text-align: center;
+}
+
+.onecoin-contents .onecoin-info--img2 {
+  width: 200px;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+
+.onecoin-contents .onecoin-info--txt {
+  font-weight: bold;
+  padding-bottom: 33px;
+  line-height: 27px;
+  letter-spacing: 0.3px;
+}
+
+.onecoin-contents .onecoin-info--500 {
+  font-size: 20px;
+}
+
+.onecoin-contents .onecoin-info--caution {
+  font-size: 13px;
+  padding-bottom: 75px;
+}
+
+.onecoin-contents .onecoin-month {
+  padding-top: 60px;
+}
+
+.onecoin-contents .onecoin-month h2 {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 35px;
+  padding-bottom: 15px;
+}
+
+.onecoin-contents .onecoin-month--img {
+  width: 180px;
+  padding-bottom: 70px;
+}
+
+@media screen and (min-width: 750px) {
+  .onecoin-layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .onecoin-info {
+    width: 50%;
+  }
+  .onecoin-info--img1 {
+    text-align: center !important;
+  }
+  .onecoin-month {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.flower-contents {
+  background-color: #ead5dc;
+  text-align: center;
+  color: #3f434a;
+  padding-bottom: 60px;
+}
+
+.flower-contents h2 {
+  font-weight: normal;
+}
+
+.flower-contents .flower-title {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.flower-contents .flower-img img {
+  width: 88%;
+  padding-bottom: 30px;
+}
+
+.flower-contents .flower-txt {
+  padding: 0 22px;
+}
+
+.flower-contents .flower-txt--layout h2 {
+  font-size: 20px;
+  padding-bottom: 13px;
+}
+
+.flower-contents .flower-txt--layout p {
+  letter-spacing: 0.5px;
+  text-align: left;
+  padding-bottom: 25px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 750px) {
+  .flower-title {
+    float: right;
+  }
+  .flower-img {
+    width: 50%;
+    float: left;
+  }
+  .flower-txt {
+    float: right;
+  }
+  .flower-contents {
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+}
+
+.vessel-contents {
+  background-color: #e7e3df;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 65px;
+  color: #3f434a;
+}
+
+.vessel-contents .vessel-title h2 {
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.vessel-contents .vessel-inexpensive {
+  display: inline-block;
+  background-color: #fff;
+  padding: 5px 7px;
+  position: relative;
+  z-index: 5;
+}
+
+.vessel-contents .vessel-inexpensive p {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.vessel-contents .vessel-img {
+  background: url("img/bg_vase.jpg") no-repeat center;
+  background-size: 110%;
+  height: 420px;
+  position: relative;
+  top: -20px;
+}
+
+.vessel-contents .vessel-info {
+  overflow: hidden;
+  padding: 0 22px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.vessel-contents .vessel-info--txt {
+  padding-bottom: 27px;
+  line-height: 24px;
+}
+
+.vessel-contents .vessel-info--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vessel-contents .vessel-info--img img {
+  width: 89%;
+}
+
+.vessel-contents .vessel-info--img p {
+  font-size: 13px;
+  -webkit-transform: translate(30px, -30px);
+          transform: translate(30px, -30px);
+}
+
+.vessel-contents .vessel-info--price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.vessel-contents .vessel-info--price---2week {
+  text-align: center;
+  padding: 3px;
+  margin-right: 15px;
+  border: 2px solid #3f434a;
+}
+
+.vessel-contents .vessel-info--price---2week p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.vessel-contents .vessel-info--price---1200_1200 {
+  font-size: 18px;
+}
+
+.vessel-contents .vessel-info--price---1200_1600 {
+  font-size: 13px;
+}
+
+.vessel-contents .vessel-info--app p {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 750px) {
+  .vessel-img {
+    width: 30%;
+    position: relative !important;
+    right: 0 !important;
+  }
+}
+
+.merit-contents {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #3f434a;
+}
+
+.merit-contents .merit-title h2 {
+  font-weight: normal;
+  padding-bottom: 40px;
+}
+
+.merit-contents .merit-info img {
+  width: 20%;
+}
+
+.merit-contents .merit-info h3 {
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+
+.merit-contents .merit-info p {
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 750px) {
+  .merit-title h2 {
+    font-size: 26px;
+  }
+  .merit-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .merit-info img {
+    width: 13% !important;
+  }
+  .merit-info--easy {
+    width: 33.333%;
+  }
+  .merit-info--app {
+    width: 33.333%;
+  }
+  .merit-info--warrant {
+    width: 33.333%;
+  }
+}
+
+.bottom-contents {
+  background-color: #efdfc5;
+  text-align: center;
+  padding-top: 60px;
+  color: #3f434a;
+}
+
+.bottom-contents .bottom-txt img {
+  width: 30%;
+  padding-bottom: 10px;
+}
+
+.bottom-contents .bottom-img img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+@media screen and (min-width: 750px) {
+  .bottom-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+  .bottom-txt {
+    width: 50%;
+    margin-left: -550px  !important;
+  }
+  .bottom-txt img {
+    width: 18% !important;
+  }
+  .bottom-img img {
+    width: 45% !important;
+  }
+}
+
+.footer-contents {
+  background-color: #3f434a;
+  color: #ffffff;
+  padding: 30px 30px 125px;
+  position: relative;
+}
+
+.footer-contents .footer-menu {
+  padding-bottom: 20px;
+}
+
+.footer-contents .footer-menu--list {
+  list-style: none;
+  font-size: 14px;
+  padding-bottom: 18px;
+}
+
+.footer-contents .footer-insta img {
+  width: 17%;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.footer-contents .footer-cc p {
+  font-size: 13px;
+  opacity: 0.4;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-menu {
+    padding-top: 50px;
+  }
+  .footer-menu {
+    padding-left: 50px;
+    padding-bottom: 200px !important;
+  }
+  .footer-menu-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-menu--list {
+    display: inline-block;
+    padding-right: 180px;
+  }
+  .footer-insta img {
+    width: 3.5% !important;
+  }
+}
+
+.fixed-menu {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  height: 95px;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  text-align: center;
+  padding-top: 23px;
+}
+
+.fixed-menu img {
+  width: 90%;
+}
+
+.fixed-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fixed-menu--apple {
+  padding-right: px;
+}
+
+@media screen and (min-width: 750px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */
